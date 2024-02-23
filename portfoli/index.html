@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script src="js/app.js"></script>
+    <title>ADRIAN ROMAN MARTIN</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div id="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <nav>
+                    <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#aboutme"><span id="a_menu">ABOUT ME</span></a></li>
+                        <li><a href="#headerprojects"><span id="p_menu">PROJECTS</span></a></li>
+                        <li><a href="#letschat"><span id="l_menu">LET'S CHAT</span></a></li>
+                        <span class="cross" onclick="closeMenu()">X</span>
+                    </ul>
+                </nav>
+            </div>
+            <div class="home">
+                <div class="name">
+                    <span id="adrian">ADRIÁN</span>
+                    <span id="roman">ROMÁN</span>
+                    <p id="desp-sentence">Hi! I'm a Web Developer, an Administrator of Computer Systems and Networks and a Multimedia Specialist</p>
+                    <svg id="arrows" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M12.0001 19.1643L18.2072 12.9572L16.793 11.543L12.0001 16.3359L7.20718 11.543L5.79297 12.9572L12.0001 19.1643ZM12.0001 13.5144L18.2072 7.30728L16.793 5.89307L12.0001 10.686L7.20718 5.89307L5.79297 7.30728L12.0001 13.5144Z"/></svg>                    
+                </div>
+                <img src="images/silueta3.1.2.png" alt="">
+            </div>
+        </header>
+        <div class="container2">
+            <div class="info">
+                <div id="aboutme">
+                    <h3 id="about">About Me</h3>
+                    <p>If you want to learn more about meee... <span id="click">click</span> the button to open and take a glance at my CV. 
+                        Inside, you’ll find all about my educational formation, certifications, among others.</p>
+                    <button id="comeon">COME ON!</button>
+                </div>
+            </div>
+            <div class="info">
+                <div id="formation">
+                    <section class="cv">
+                        <span class="dates">2023 - PRESENT</span>
+                        <p class="certificate">Advanced Vocational Training</p>
+                        <h1 class="job">Web Developer</h1>
+                        <p class="text">In an advanced vocational training of Web Development, you master IT languages 
+                            such as HTML, CSS, and JavaScript. Additionally, you explore advanced frameworks like React 
+                            or Angular, acquire skills in databases and interface design, address web security, and 
+                            become familiar with agile methods for software development.</p>
+                    </section>
+                    <section class="cv">
+                        <span class="dates">2021 - PRESENT</span>
+                        <p class="certificate">Bachelor's Degree in Digital and Multimedia Interaction Techniques</p>
+                        <h1 class="job">Multimedia Specialist</h1>
+                        <p class="text">It focuses on developing technical and creative skills to conceptualize, design, 
+                            and develop interactive and multimedia solutions. You'll be prepared for roles in the 
+                            technology, design, and software development industry. It's an exciting path with plenty of 
+                            creative possibilities!</p>
+                    </section>
+                    <section class="cv">
+                        <span class="dates">2021-2023</span>
+                        <p class="certificate">Advanced Vocational Training</p>
+                        <h1 class="job">Administrator of Computer Systems and Networks, Cybersecurity</h1>
+                        <p class="text">In an advanced vocational training of Administrator of Computer Systems and 
+                            Networks, Cybersecurity, You'll be prepared for roles related to the administration of 
+                            computer systems and networks, with a specific focus on cybersecurity. You can work as a 
+                            systems administrator, network specialist, or cybersecurity professional in various business 
+                            environments.</p>
+                    </section>
+                    <section class="cv">
+                        <span class="dates">2019-2021</span>
+                        <p class="certificate"></p>
+                        <h1 class="job">Baccalaureate in Social Sciences</h1>
+                        <p class="text">In a social sciences Baccalaureate, students study subjects such as history, 
+                            geography, and economics to comprehend societies and cultures. The focus is on developing 
+                            analytical and research skills, addressing contemporary issues to promote an understanding 
+                            of social dynamics. Students may also explore fields like psychology, sociology, and law as 
+                            part of their education.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+            <div class="container3">
+                <div id="headerprojects">
+                    <div id="sometitle">
+                        <h3>SOME PROJECTS...</h3>
+                        <p>Turning ideas into impactful experiences. Explore the magic within each project in my portfolio.</p>
+                    </div>
+                    <img src="images/bombillas.png" alt="">
+                </div>
+                <div id="projects">
+                    <section class="myproject">
+                        <img src="images/mariokartproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>MARIO KART RACE CIRCUIT</h1>
+                            <p>During my university journey, I delved into the realm of 3D Graphics in one of my modules. 
+                                As a Mario Kart enthusiast, I chose to channel that passion into my project.
+                                I crafted my own circuit and replicated essential in-game objects. It was my way of seamlessly 
+                                blending my love for video games with my academic pursuits. How does that sound?
+                            </p>
+                            <div class="icon-nolink">
+                                <img src="images/mayaicon.png" alt="">
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="myproject">
+                        <img src="images/myislandproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>MY FUTURE ISLAND</h1>
+                            <p>This 3D graphics project marked one of my initial ventures, sparked by the idea of 
+                                modelling what my future island would look like. 
+                                It featured elements such as a cozy wooden house, a towering lighthouse, a majestic palm tree, 
+                                and, of course, my own parcels of land. I couldn't forget to include my cherished jet ski to 
+                                complete the scene! It was my way of visually shaping my island dreams.
+                            </p>
+                            <div class="icon-nolink">
+                                <img src="images/mayaicon.png" alt="">
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="myproject">
+                        <img src="images/lupulproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>LUPUL NEWSLETTER</h1>
+                            <p>As part of my Multimedia degree, I designed a newsletter for the launch of LUPUL artbeer, a new brewery in 
+                                Barcelona. The newsletter showcased the brewery's features, prices, activities, and tasting sessions. This 
+                                project allowed me to merge design creativity with promoting an innovative beer destination in the city.
+                            </p>
+                            <div class="icon-nolink">
+                                <img src="images/illustratoricon.png" alt="">
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="myproject">
+                        <img src="images/montjuicproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>MONTJUIC PHOTO EDITION</h1>
+                            <p>This project for the Photography and Video subject involved putting into practice image 
+                                developing and retouching techniques using Adobe Photoshop software. Consequently, I decided 
+                                to go to Montjuic, Barcelona, to capture an incredible photography to which I added my own 
+                                touch of originality.
+                            </p>
+                            <div class="video-btn">
+                                <a class="link-btn" href="https://www.youtube.com/watch?v=3zybWKydYWw" target="_blank"><i class='bx bx-play'></i></a>
+                                <img src="images/photoshopicon.png" alt="">
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="myproject">
+                        <img src="images/infowaveproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>INFOWAVE IDR</h1>
+                            <p>This project holds a special place in my heart as it was my final project for the Advanced 
+                                Vocational Training in Systems and Networks Administration. In it, my colleague and I created 
+                                Infowave Adrians (since we share the same name), with the aim of building an IDR using tools 
+                                such as ElasticSearch, Kibana, Logstash, among others.
+                                It was a collaborative effort to showcase our skills in the field of systems and networks.
+                            </p>
+                            <div class="video-btn">
+                                <a class="link-btn" href="https://youtu.be/AZtweKz_h84" target="_blank"><i class='bx bx-play'></i></a>
+                                <div id="infowaveicons">
+                                    <img src="images/elasticsearchicon.png" alt="">
+                                    <img src="images/ubuntuicon.png" alt="">
+                                </div>
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="myproject">
+                        <img src="images/arduinoproject.png" alt="">
+                        <button class="toggle-button" onclick="toggleDescription(this)">READ</button>
+                        <div class="description">
+                            <h1>MP3 PLAYER WITH LED MATRIX</h1>
+                            <p>For my university project, I created an MP3 player using Arduino. It played iconic songs like 
+                                "Despacito" and "Pirates of the Caribbean" while synchronizing LEDs to the music's rhythm, 
+                                blending technology and creativity effectively.
+                            </p>
+                            <div class="video-btn">
+                                <a class="link-btn" href="https://www.youtube.com/watch?v=SzPbhwsxL58" target="_blank"><i class='bx bx-play'></i></a>
+                                <img src="images/arduinoicon.png" alt="">
+                                <button class="close-btn" onclick="closeDescription(this)">X</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>                
+            </div>
+            <div class="container4">
+                <section class="contact">
+                    <div id="letschat">
+                        <h1>LET’S CHAT !!!</h1>
+                        <p>Have you had any doubts? Do you want to know more about me?
+                            <a href=""><span id="send-email">Send me an email</span></a><span>, and I'll respond instantly!</span>
+                        </p>
+                        <button id="send-btn">SEND ME AN EMAIL</button>
+                        <p>You can also reach out to me through my social media.</p>
+                    </div>
+                    <img src="images/avionpapel.png" alt="">
+                </section>
+                <div class="socialmedia">
+                    <span class='bx bxl-instagram'></span>
+                    <span class='bx bxl-twitter'></span>
+                    <span class='bx bxl-linkedin-square'></span>
+                    <span class='bx bxl-youtube'></span>
+                </div>
+                <div class="copyright">
+                    <i class='bx bx-copyright'></i>
+                    <p>All rights reserved 2023 - Adrián Román Martin</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
