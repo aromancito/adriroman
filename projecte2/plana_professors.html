@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Plana Professors</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <ul class="header_ul">
+                    <li><img src="images/img_session.png" alt=""></li>
+                    <li>Estudiants</li>
+                    <li>Importar CSV</li>
+                    <li>Projectes</li>
+                    <li>Activitats</li>
+                </ul>
+                <ul class="header_ul">
+                    <li><button type="button">TANCAR SESSIÓ</button></li>
+                </ul>
+            </div>
+        </header>
+        <div id="crear-estudiant">
+            <h2 id="crear-est-title">CREAR ESTUDIANT</h2>
+            <form class="form-crear">
+                <div class="input-group">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="text" placeholder="Cognoms" required>
+                </div>
+                <input type="email" placeholder="Correu electrònic" class="email-input" required>
+                <button type="submit" class="btn">CREAR ESTUDIANT</button>
+                <a href="#" class="import-csv">Importar CSV</a>
+            </form>
+        </div>
+        <!-- Sección para modificar estudiantes -->
+        <h2>MODIFICAR ESTUDIANT</h2>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Cognoms</th>
+                    <th>Correu Electrònic</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adrian</td>
+                    <td>Román</td>
+                    <td>aaa@gmail.com</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+                <tr>
+                    <td>Toni</td>
+                    <td>Valverde</td>
+                    <td>ttt@gmail.com</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn">GUARDAR CANVIS</button>
+        <div id="crear-item">
+            <h2 id="crear-it-title">CREAR ÍTEM</h2>
+            <form class="form-crear">
+                <input type="text" placeholder="Nom" required>
+                <div class="icon-grid">
+                    <button><img src="images/icon _coworking_.png" alt="Icono 1"></button>
+                    <button><img src="images/icon_users_.png" alt="Icono 2"></button>
+                    <button><img src="images/icon_users_develop_.png" alt="Icono 3"></button>
+                    <button><img src="images/icon_users2.png" alt="Icono 4"></button>
+                    <button><img src="images/icon_users_.png" alt="Icono 5"></button>
+                    <button><img src="images/icon_People Carry_.png" alt="Icono 6"></button>
+                    <button><img src="images/icon _coworking_.png" alt="Icono 1"></button>
+                    <button><img src="images/icon_users_.png" alt="Icono 2"></button>
+                    <button><img src="images/icon_users_develop_.png" alt="Icono 3"></button>
+                    <button><img src="images/icon_users2.png" alt="Icono 4"></button>
+                    <button><img src="images/icon_users_.png" alt="Icono 5"></button>
+                    <button><img src="images/icon_People Carry_.png" alt="Icono 6"></button>
+                </div>
+                <button type="submit" class="btn">CREAR ÍTEM</button>
+            </form>
+        </div>
+        <h2>MODIFICAR ÍTEM</h2>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Icona</th>
+                    <th>Nom</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/icon _coworking_.png" alt=""></td>
+                    <td>Treball en equip</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/icon_users_develop_.png" alt=""></td>
+                    <td>Desenvolupament i disseny</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn">GUARDAR CANVIS</button>
+        <div id="crear-projecte">
+            <h2 id="crear-pr-title">CREAR PROJECTE</h2>
+            <form class="form-crear">
+                <div class="input-group">
+                    <input type="text" placeholder="Nom" required>
+                    <select name="seleccionar-items" id="seleccionar-items">
+                        <option value="">Seleccionar items</option>
+                        <option value="">Treball en equip</option>
+                        <option value="">Desenvolupament i disseny</option>
+                        <option value="">Treball en equip</option>
+                        <option value="">Desenvolupament i disseny</option>
+                    </select>
+                </div>
+                <textarea name="descripcio" id="descripcio" placeholder="Descripció"></textarea>
+                <div class="input-group">
+                    <input type="date" required>
+                    <input type="date" required>
+                </div>
+                <select name="seleccionar-estat" id="seleccionar-estat">
+                    <option value="">Estat</option>
+                    <option value="">Activat</option>
+                    <option value="">Desactivat</option>
+                </select>
+                <button type="submit" class="btn">CREAR PROJECTE</button>
+            </form>
+        </div>
+        <h2>MODIFICAR PROJECTE</h2>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Descripció</th>
+                    <th>Data inici</th>
+                    <th>Data final</th>
+                    <th>Estat</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Treball en equip</td>
+                    <td>Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip</td>
+                    <td>10/01/2025</td>
+                    <td>25/02/2025</td>
+                    <td>Activa</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+                <tr>
+                    <td>Treball en equip</td>
+                    <td>Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip</td>
+                    <td>10/01/2025</td>
+                    <td>25/02/2025</td>
+                    <td>Activa</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn">GUARDAR CANVIS</button>
+        <div id="crear-activitat">
+            <h2 id="crear-act-title">CREAR ACTIVITAT</h2>
+            <form class="form-crear">
+                <div class="input-group">
+                    <input type="text" placeholder="Nom" required>
+                    <select name="seleccionar-items" id="seleccionar-items">
+                        <option value="">Seleccionar items</option>
+                        <option value="">Treball en equip</option>
+                        <option value="">Desenvolupament i disseny</option>
+                        <option value="">Treball en equip</option>
+                        <option value="">Desenvolupament i disseny</option>
+                    </select>
+                </div>
+                <textarea name="descripcio" id="descripcio" placeholder="Descripció"></textarea>
+                <div class="input-group">
+                    <input type="date" required>
+                    <input type="date" required>
+                </div>
+                <select name="seleccionar-estat" id="seleccionar-estat">
+                    <option value="">Estat</option>
+                    <option value="">Activat</option>
+                    <option value="">Desactivat</option>
+                </select>
+                <button type="submit" class="btn">CREAR PROJECTE</button>
+            </form>
+        </div>
+        <h2>MODIFICAR ACTIVITAT</h2>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Descripció</th>
+                    <th>Data inici</th>
+                    <th>Data final</th>
+                    <th>Estat</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Treball en equip</td>
+                    <td>Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip</td>
+                    <td>10/01/2025</td>
+                    <td>25/02/2025</td>
+                    <td>Activa</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+                <tr>
+                    <td>Treball en equip</td>
+                    <td>Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip Treball en equip</td>
+                    <td>10/01/2025</td>
+                    <td>25/02/2025</td>
+                    <td>Activa</td>
+                    <td><button class="delete-btn">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn">GUARDAR CANVIS</button>
+    </div>
+</body>
+
+</html>
